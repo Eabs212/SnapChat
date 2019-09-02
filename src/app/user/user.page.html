@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{user?.email}}</ion-title>
+    <ion-buttons slot="start"> <ion-back-button defaultHref="tabs/search"></ion-back-button> </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-profile-detail [profile]='user'></app-profile-detail>
+
+</ion-content>

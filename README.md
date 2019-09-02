@@ -1,2 +1,1 @@
-# SnapChat
-SnapChat app for mobile devices
+Chat-App

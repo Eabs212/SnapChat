@@ -1,0 +1,14 @@
+<ion-searchbar [(ngModel)]='query' (ionChange)='search(query)' debounce="500"></ion-searchbar>
+
+<ion-list *ngIf='profileList?.length'>
+  <ion-item *ngFor='let profile of profileList' (click)='getUser(profile)'>
+    <ion-avatar item-left> 
+      <img src="../../assets/shapes.svg">
+    </ion-avatar>
+    <ion-text>
+      <h2>{{profile.firstName}} {{profile.lastName}}</h2>
+      <h6>{{profile.email}}</h6>
+    </ion-text>
+  </ion-item>
+
+</ion-list>
